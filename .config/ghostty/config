@@ -1,0 +1,17 @@
+# confirm-close-surface = false
+font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "RobotoMono Nerd Font Mono"
+font-thicken = true
+font-thicken-strength = 255
+adjust-cell-height = 10%
+font-size = 15
+
+# background-opacity = 0.95
+# background-opacity = 1
+# background-blur-radius = 80
+# theme = light:ayu_light,dark:ayu
+theme = ayu
+
+window-padding-x = 0
+window-padding-y = 0
+macos-titlebar-style = hidden
