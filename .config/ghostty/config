@@ -9,9 +9,8 @@ font-size = 15
 background-opacity = 0.95
 # background-opacity = 1
 background-blur-radius = 80
-# theme = light:ayu_light,dark:ayu
-# theme = ayu
-theme = tokyonight_night
+# theme = tokyonight_night
+theme = Adventure 
 
 window-padding-x = 0
 window-padding-y = 0

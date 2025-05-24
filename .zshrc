@@ -9,6 +9,9 @@ ZSH_THEME="robbyrussell"
 # Plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
+# Secrets source
+source $HOME/.zsh_secrets
+
 # Start zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -53,12 +56,6 @@ PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # python poetry
 export PATH="/Users/artemsimutin/.local/bin:$PATH"
-
-# python
-# PATH=$(pyenv root)/shims:$PATH
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
 
 # Local Chromium path
 export LOCAL_CHROME_EXECUTABLE_PATH="/usr/local/chromium/chromium/mac_arm-1380955/chrome-mac/Chromium.app/Contents/MacOS/Chromium"
