@@ -24,6 +24,26 @@ return {
           name = 'Nordic',
           colorscheme = 'nordic',
         },
+        {
+          name = 'Onedark',
+          colorscheme = 'onedark',
+        },
+        {
+          name = 'Catppuccin Latte',
+          colorscheme = 'catppuccin-latte',
+        },
+        {
+          name = 'Catppuccin Frappe',
+          colorscheme = 'catppuccin-frappe',
+        },
+        {
+          name = 'Catppuccin Macchiato',
+          colorscheme = 'catppuccin-macchiato',
+        },
+        {
+          name = 'Catppuccin Mocha',
+          colorscheme = 'catppuccin-mocha',
+        },
       },
       live_preview = true,
     }

@@ -7,6 +7,7 @@ return {
       styles = {
         comments = { italic = false },
       },
+      transparent = true,
     }
   end,
 }

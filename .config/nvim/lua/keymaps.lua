@@ -20,3 +20,11 @@ vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>st', '<cmd>Themery<CR>', { noremap = true, silent = true, desc = '[S]earch [T]hemes' })
+
+-- Yank to system clipboard with capital Y
+vim.keymap.set('n', 'Y', '"+y', { noremap = true, silent = true })
+vim.keymap.set('v', 'Y', '"+y', { noremap = true, silent = true })
+
+-- Paste from system clipboard with capital P
+vim.keymap.set('n', 'P', '"+p', { noremap = true, silent = true })
+vim.keymap.set('v', 'P', '"+p', { noremap = true, silent = true })

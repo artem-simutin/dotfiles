@@ -20,7 +20,7 @@ return {
         return nil
       else
         return {
-          timeout_ms = 500,
+          timeout_ms = 3000,
           lsp_format = 'fallback',
         }
       end
@@ -28,6 +28,11 @@ return {
     formatters_by_ft = {
       lua = { 'stylua' },
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      typescript = { 'prettierd', 'prettier', stop_after_first = true },
+      javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+      typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+      go = { 'gofmt', 'goimports' },
+      python = { 'isort', 'black' },
     },
   },
 }
