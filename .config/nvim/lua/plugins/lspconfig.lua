@@ -105,6 +105,7 @@ return {
       rust_analyzer = {},
       vtsls = {},
       tailwindcss = {},
+      sqls = {},
 
       lua_ls = {
         settings = {
@@ -119,6 +120,7 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua',
+      'sql-formatter',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

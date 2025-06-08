@@ -44,6 +44,10 @@ return {
           name = 'Catppuccin Mocha',
           colorscheme = 'catppuccin-mocha',
         },
+        {
+          name = 'Vague',
+          colorscheme = 'vague',
+        },
       },
       live_preview = true,
     }

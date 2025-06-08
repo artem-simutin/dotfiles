@@ -33,6 +33,7 @@ return {
       typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
       go = { 'gofmt', 'goimports' },
       python = { 'isort', 'black' },
+      sql = { 'sql_formatter' },
     },
   },
 }
