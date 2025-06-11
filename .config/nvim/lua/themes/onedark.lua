@@ -4,7 +4,7 @@ return {
   config = function()
     require('onedark').setup {
       style = 'dark',
-      transparent = true,
+      transparent = vim.g.theme_transparency,
     }
   end,
 }

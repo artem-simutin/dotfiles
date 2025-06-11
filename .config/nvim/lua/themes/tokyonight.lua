@@ -7,7 +7,7 @@ return {
       styles = {
         comments = { italic = false },
       },
-      transparent = true,
+      transparent = vim.g.theme_transparency,
     }
   end,
 }

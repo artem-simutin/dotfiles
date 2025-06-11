@@ -48,6 +48,50 @@ return {
           name = 'Vague',
           colorscheme = 'vague',
         },
+        {
+          name = 'Nightfox',
+          colorscheme = 'nightfox',
+        },
+        {
+          name = 'Dayfox',
+          colorscheme = 'dayfox',
+        },
+        {
+          name = 'Dawnfox',
+          colorscheme = 'Dawnfox',
+        },
+        {
+          name = 'Duskfox',
+          colorscheme = 'duskfox',
+        },
+        {
+          name = 'Nordfox',
+          colorscheme = 'nordfox',
+        },
+        {
+          name = 'Terafox',
+          colorscheme = 'terafox',
+        },
+        {
+          name = 'Carbonfox',
+          colorscheme = 'carbonfox',
+        },
+        {
+          name = 'Rose Pine',
+          colorscheme = 'rose-pine',
+        },
+        {
+          name = 'Rose Pine Moon',
+          colorscheme = 'rose-pine-moon',
+        },
+        {
+          name = 'Rose Pine Dawn',
+          colorscheme = 'rose-pine-dawn',
+        },
+        {
+          name = 'Gruvbox',
+          colorscheme = 'gruvbox',
+        },
       },
       live_preview = true,
     }

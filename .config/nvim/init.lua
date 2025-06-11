@@ -5,6 +5,7 @@
 -- /____/\__/\__,_/\__/_/_/|_|
 
 require 'options'
+require 'theme-management'
 
 local data_dir = vim.fn.stdpath 'data'
 local lazypath = data_dir .. '/lazy/lazy.nvim'

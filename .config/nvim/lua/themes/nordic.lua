@@ -4,7 +4,7 @@ return {
   priority = 1000,
   opts = {
     transparent = {
-      bg = true,
+      bg = vim.g.theme_transparency,
       float = false,
     },
   },

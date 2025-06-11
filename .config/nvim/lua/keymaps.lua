@@ -29,3 +29,6 @@ vim.keymap.set('v', 'Y', '"+y', { noremap = true, silent = true })
 -- Paste from system clipboard with capital P
 vim.keymap.set('n', 'P', '"+p', { noremap = true, silent = true })
 vim.keymap.set('v', 'P', '"+p', { noremap = true, silent = true })
+
+-- Theme management
+vim.keymap.set('n', '<leader>tt', Toggle_transparency, { silent = true, noremap = true, desc = '[T]oggle [T]heme Transparency' })

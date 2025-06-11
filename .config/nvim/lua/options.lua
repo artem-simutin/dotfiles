@@ -33,8 +33,11 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.o.inccommand = 'split'
 
 -- Show which line your cursor is on
-vim.o.cursorline = true
+vim.o.cursorline = false
 
 vim.o.scrolloff = 10
 
 vim.o.confirm = true
+
+vim.opt.listchars = { tab = '  ' }
+vim.opt.list = false
