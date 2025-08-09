@@ -2,6 +2,8 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
+vim.o.cmdheight = 0
+vim.opt.laststatus = 3
 
 vim.opt.termguicolors = true
 vim.o.number = true

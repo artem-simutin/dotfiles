@@ -92,6 +92,34 @@ return {
           name = 'Gruvbox',
           colorscheme = 'gruvbox',
         },
+        {
+          name = 'TokyoDark',
+          colorscheme = 'tokyodark',
+        },
+        {
+          name = 'NightOwl',
+          colorscheme = 'night-owl',
+        },
+        {
+          name = 'Dracula',
+          colorscheme = 'dracula',
+        },
+        {
+          name = 'Dracula Soft',
+          colorscheme = 'dracula-soft',
+        },
+        {
+          name = 'Ayu Dark',
+          colorscheme = 'ayu-dark',
+        },
+        {
+          name = 'Ayu Mirage',
+          colorscheme = 'ayu-mirage',
+        },
+        {
+          name = 'Ayu Light',
+          colorscheme = 'ayu-light',
+        },
       },
       live_preview = true,
     }

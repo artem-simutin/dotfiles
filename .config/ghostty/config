@@ -1,16 +1,15 @@
 confirm-close-surface = false
-font-family = "JetBrainsMono Nerd Font Mono"
-# font-family = "RobotoMono Nerd Font Mono"
+
+font-family = "JetBrainsMono Nerd Font"
 font-thicken = true
-font-thicken-strength = 255
-adjust-cell-height = 10%
+# adjust-cell-height = 25%
 font-size = 15
 
-# background-opacity = 0.9
 background-opacity = 1
-# background-blur-radius = 80
-theme = catppuccin-mocha
+# background-blur = true
+theme = MaterialOcean
 
-window-padding-x = 0
-window-padding-y = 0
+window-padding-x = 5
+window-padding-y = 5
+
 macos-titlebar-style = hidden

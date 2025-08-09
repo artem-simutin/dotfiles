@@ -15,7 +15,7 @@ local function save_transparency()
 end
 
 function Toggle_transparency()
-  print 'toggle'
+  print 'Theme Transparency toggled!'
   vim.g.theme_transparency = not vim.g.theme_transparency
   save_transparency()
 end

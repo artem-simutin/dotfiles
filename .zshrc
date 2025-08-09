@@ -62,16 +62,16 @@ export LOCAL_CHROME_EXECUTABLE_PATH="/usr/local/chromium/chromium/mac_arm-138095
 
 # tmux
 ## Check if inside a tmux session
-if [ -z "$TMUX" ]; then
-  # Check if there are any tmux sessions already
-  if tmux has-session 2>/dev/null; then
-    # Attach to the first available session
-    tmux attach-session -t $(tmux list-sessions -F "#{session_name}" | head -n 1)
-  else
-    # Start a new session if none exists
-    tmux new-session
-  fi
-fi
+# if [ -z "$TMUX" ]; then
+#   # Check if there are any tmux sessions already
+#   if tmux has-session 2>/dev/null; then
+#     # Attach to the first available session
+#     tmux attach-session -t $(tmux list-sessions -F "#{session_name}" | head -n 1)
+#   else
+#     # Start a new session if none exists
+#     tmux new-session
+#   fi
+# fi
 
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
@@ -80,12 +80,3 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Added by Windsurf
-export PATH="/Users/artemsimutin/.codeium/windsurf/bin:$PATH"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/artemsimutin/.lmstudio/bin"
-
-# Added by Windsurf
-export PATH="/Users/artemsimutin/.codeium/windsurf/bin:$PATH"
