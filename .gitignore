@@ -1,0 +1,26 @@
+# 1. Ignore everything
+*
+
+# 2. But allow directories to be descended into
+!*/
+
+# 3. Always keep the .gitignore itself visible
+!.gitignore
+
+# ──────────────────────────────────────────────
+# Now list ONLY the things you WANT in the repo
+# ──────────────────────────────────────────────
+
+# Config files you want committed
+!.zshrc
+!backup.sh
+!.tmux.conf
+!.aerospace.toml
+
+!.config/
+!.config/ghostty
+!.config/ghostty/**
+!.config/nvim
+!.config/nvim/**
+!.config/
+!.config/starship.toml
