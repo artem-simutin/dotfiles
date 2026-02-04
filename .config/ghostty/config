@@ -7,16 +7,14 @@ font-thicken = true
 # adjust-cell-height = 15%
 font-size = 20
 
-background-opacity = 0.97
-background-blur = 20
+background-opacity = 0.9
+background-blur = 100
 
-theme = Material Ocean
+#theme = Material Ocean
 #theme = Adventure
+theme = TokyoNight Night
 
 window-padding-x = 15
 window-padding-y = 15
-
-#window-padding-x = 0
-#window-padding-y = 0
 
 macos-titlebar-style = hidden
