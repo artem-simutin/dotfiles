@@ -106,7 +106,7 @@ return {
       vtsls = {},
       tailwindcss = {},
       sqls = {},
-
+      biome = {},
       lua_ls = {
         settings = {
           Lua = {
