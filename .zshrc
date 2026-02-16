@@ -50,3 +50,5 @@ esac
 eval "$(starship init zsh)" 
 precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
+export JAVA_HOME=$(/opt/homebrew/bin/brew --prefix openjdk)
+export PATH=$JAVA_HOME/bin:$PATH
