@@ -3,18 +3,19 @@ shell-integration = zsh
 cursor-style = bar
 
 font-family = "JetBrainsMono Nerd Font"
-font-thicken = true
+font-thicken = false
 # adjust-cell-height = 15%
-font-size = 20
+font-size = 16
 
-background-opacity = 0.9
-background-blur = 100
+background-opacity = 1
+# background-blur = 100
 
-#theme = Material Ocean
-#theme = Adventure
-theme = TokyoNight Night
+# theme = Material Ocean
+# theme = Adventure
+# theme = TokyoNight Night
+theme = light:Ayu Light,dark:Ayu
 
-window-padding-x = 15
-window-padding-y = 15
+window-padding-x = 8
+window-padding-y = 5
 
 macos-titlebar-style = hidden

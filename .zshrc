@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias n="nvim"
+alias c="code"
 alias w="windsurf"
 alias bu="brew update && brew upgrade && brew cleanup && brew autoremove"
 alias auz="/opt/homebrew/bin/zed"
@@ -52,3 +53,8 @@ precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
 export JAVA_HOME=$(/opt/homebrew/bin/brew --prefix openjdk)
 export PATH=$JAVA_HOME/bin:$PATH
+
+# tmux
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+  tmux attach -t default || tmux new -s default
+fi
