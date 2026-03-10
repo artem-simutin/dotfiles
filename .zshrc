@@ -14,7 +14,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias n="nvim"
-alias c="code"
 alias w="windsurf"
 alias bu="brew update && brew upgrade && brew cleanup && brew autoremove"
 alias auz="/opt/homebrew/bin/zed"
