@@ -10,9 +10,9 @@ font-size = 18
 background-opacity = 0.98
 background-blur = 100
 
-# theme = Material Ocean
+theme = Material Ocean
 # theme = Adventure
-theme = TokyoNight Night
+# theme = TokyoNight Night
 # theme = light:Ayu Light,dark:Ayu
 # theme = Ayu
 
