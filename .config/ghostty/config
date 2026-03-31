@@ -7,16 +7,12 @@ font-thicken = false
 adjust-cell-height = 15%
 font-size = 18
 
-background-opacity = 0.98
-background-blur = 100
+background-opacity = 0.95
+background-blur = 20
 
-theme = Material Ocean
-# theme = Adventure
-# theme = TokyoNight Night
-# theme = light:Ayu Light,dark:Ayu
-# theme = Ayu
+theme = Github Dark Default 
 
-window-padding-x = 16
-window-padding-y = 10
+window-padding-x = 10
+window-padding-y = 5
 
 macos-titlebar-style = hidden
