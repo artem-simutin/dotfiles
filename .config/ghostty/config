@@ -12,7 +12,10 @@ background-blur = 20
 
 theme = Github Dark Default 
 
-window-padding-x = 10
-window-padding-y = 5
+# window-padding-x = 10
+# window-padding-y = 5
+
+window-padding-x = 0
+window-padding-y = 0
 
 macos-titlebar-style = hidden
