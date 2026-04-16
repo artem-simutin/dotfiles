@@ -1,21 +1,24 @@
+window-decoration = false
 confirm-close-surface = false
 shell-integration = zsh
 cursor-style = bar
+window-show-tab-bar = never
 
 font-family = "JetBrainsMono Nerd Font"
 font-thicken = false
-adjust-cell-height = 15%
+# adjust-cell-height = 15%
 font-size = 18
 
-background-opacity = 0.95
+background-opacity = 0.75
 background-blur = 20
 
-theme = Github Dark Default 
+theme = Cursor Dark 
+background = #000000
+
+window-padding-balance = true
+window-padding-color = extend
+
+# theme = Dark Pastel
 
 # window-padding-x = 10
 # window-padding-y = 5
-
-window-padding-x = 0
-window-padding-y = 0
-
-macos-titlebar-style = hidden

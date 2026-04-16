@@ -120,6 +120,18 @@ return {
           name = 'Ayu Light',
           colorscheme = 'ayu-light',
         },
+        {
+          name = 'Cursor Dark',
+          colorscheme = 'cursor-dark',
+        },
+        {
+          name = 'Cursor Dark Midnight',
+          colorscheme = 'cursor-dark-midnight',
+        },
+        {
+          name = 'Cursor Light',
+          colorscheme = 'cursor-light',
+        },
       },
       live_preview = true,
     }
