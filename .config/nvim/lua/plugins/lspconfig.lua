@@ -116,6 +116,13 @@ return {
         },
       },
     }
+
+    -- Configure each server with capabilities via vim.lsp.config (Neovim 0.12+ API)
+    for server_name, server_settings in pairs(servers) do
+      server_settings.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server_settings.capabilities or {})
+      vim.lsp.config(server_name, server_settings)
+    end
+
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua',
@@ -124,16 +131,9 @@ return {
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
+    -- mason-lspconfig v2: automatic_enable will call vim.lsp.enable() for installed servers
     require('mason-lspconfig').setup {
-      ensure_installed = {},
-      automatic_installation = false,
-      handlers = {
-        function(server_name)
-          local server = servers[server_name] or {}
-          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-          require('lspconfig')[server_name].setup(server)
-        end,
-      },
+      automatic_enable = true,
     }
   end,
 }

@@ -10,7 +10,9 @@ return {
         input = {},
         picker = {
           actions = {
-            opencode_send = function(...) return require('opencode').snacks_picker_send(...) end,
+            opencode_send = function(...)
+              return require('opencode').snacks_picker_send(...)
+            end,
           },
           win = {
             input = {
@@ -24,21 +26,42 @@ return {
     },
   },
   config = function()
+    local split_opts = {
+      split = 'right',
+      width = math.floor(vim.o.columns * 0.35),
+    }
+
+    -- NOTE: Terminal buffers in Neovim render their own background (from the TUI app),
+    -- ignoring Neovim's Normal highlight. Transparency is not possible for embedded terminals.
+    -- This is a Neovim limitation, not an opencode.nvim issue.
+
     ---@type opencode.Opts
     vim.g.opencode_opts = {}
 
     vim.o.autoread = true
 
-    vim.keymap.set({ 'n', 'x' }, '<leader>aa', function() require('opencode').ask('@this: ', { submit = true }) end, { desc = 'Ask opencode...' })
-    vim.keymap.set({ 'n', 'x' }, '<leader>ax', function() require('opencode').select() end, { desc = 'Execute opencode action...' })
-    vim.keymap.set({ 'n', 't' }, '<leader>at', function() require('opencode').toggle() end, { desc = 'Toggle opencode' })
+    vim.keymap.set({ 'n', 'x' }, '<leader>aa', function()
+      require('opencode').ask('@this: ', { submit = true })
+    end, { desc = 'Ask opencode...' })
+    vim.keymap.set({ 'n', 'x' }, '<leader>ax', function()
+      require('opencode').select()
+    end, { desc = 'Execute opencode action...' })
+    vim.keymap.set({ 'n', 't' }, '<leader>at', function()
+      require('opencode').toggle()
+    end, { desc = 'Toggle opencode' })
 
-    vim.keymap.set({ 'n', 'x' }, 'go', function() return require('opencode').operator('@this ') end, { desc = 'Add range to opencode', expr = true })
-    vim.keymap.set('n', 'goo', function() return require('opencode').operator('@this ') .. '_' end, { desc = 'Add line to opencode', expr = true })
+    vim.keymap.set({ 'n', 'x' }, 'go', function()
+      return require('opencode').operator '@this '
+    end, { desc = 'Add range to opencode', expr = true })
+    vim.keymap.set('n', 'goo', function()
+      return require('opencode').operator '@this ' .. '_'
+    end, { desc = 'Add line to opencode', expr = true })
 
-    vim.keymap.set('n', '<S-C-u>', function() require('opencode').command('session.half.page.up') end, { desc = 'Scroll opencode up' })
-    vim.keymap.set('n', '<S-C-d>', function() require('opencode').command('session.half.page.down') end, { desc = 'Scroll opencode down' })
-
-
+    vim.keymap.set('n', '<S-C-u>', function()
+      require('opencode').command 'session.half.page.up'
+    end, { desc = 'Scroll opencode up' })
+    vim.keymap.set('n', '<S-C-d>', function()
+      require('opencode').command 'session.half.page.down'
+    end, { desc = 'Scroll opencode down' })
   end,
 }
