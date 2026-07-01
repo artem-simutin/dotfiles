@@ -57,3 +57,5 @@ export PATH=$JAVA_HOME/bin:$PATH
 if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
   tmux attach -t default || tmux new -s default
 fi
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
