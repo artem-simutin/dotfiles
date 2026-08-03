@@ -19,6 +19,7 @@ alias bu="brew update && brew upgrade && brew cleanup && brew autoremove"
 alias auz="/opt/homebrew/bin/zed"
 alias z="/usr/local/bin/zed"
 alias oc="opencode"
+alias sshhome="ssh -i ~/.ssh/homelab_id_ed25519 root@server.internal"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
