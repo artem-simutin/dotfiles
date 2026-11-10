@@ -60,3 +60,14 @@ if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
 fi
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# java and android
+export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+export ANDROID_HOME=~/Library/Android/sdk
+
+echo 'export PATH="/Users/artemsimutin/.local/bin:$PATH"' >> /Users/artemsimutin/.bashrc
+source /Users/artemsimutin/.bashrc
+
+# Claude profile: kris
+alias claude-kris='CLAUDE_CONFIG_DIR="/Users/artemsimutin/.claude-kris" claude'
